@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    /* font-size: 16px; */
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+:root{
+    --primary-color: #edf0f1;
+    --secondary-color: #24252A;
+}
+
+.dark-theme{
+    --primary-color: #24252A;
+    --secondary-color: #edf0f1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+}
+
+.main__div{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 6vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 2%;
+    color: var(--secondary-color);
+    border: 0.2em solid var(--secondary-color);
+    border-radius: 1em;
+}
+
+#content-div{
+    width: 100%;
+    height: 130vh;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(1,25% 25%);
+    grid-template-rows: repeat(1, 48% 48%);
+    /* gap: 10% 2%; */
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    color: var(--secondary-color);
+}
+
+li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* header button{
+    padding: 9px 25px;
+    background-color: #ff652f;
+    border-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0px;
+} */
+
+a figcaption{
+    color: var(--secondary-color);
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav__links li a:hover{
+    color: #ff652f;
+}
+
+/* header button:hover{
+    background-color: rgba(255, 101, 47,0.7);
+} */
+
+#logo{
+    margin-right: auto;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.previewgif{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#firstgame{
+    /* height: 20px;
+    width: 20px;
+    background-color: white; */
+}
+
+#secondgame{
+
+}
+
+.gameviddiv{
+    /* height: 150px;
+    width: 270px; */
+    /* background-color: beige; */
+    /* margin: 5% 5%; */
+}
+
+figcaption{
+    line-height: 250%;
+    text-align: center;
+    font-size: 1.3em;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.gamesa{
+    font-size: 1em;
+}
+
+figcaption:hover{
+    color: #ff652f;
+}
+
+footer{
+    width: 100%;
+    /* height: 6vh; */
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 0.2em solid var(--secondary-color);
+    border-radius: 1em;
+}
+
+#footer-div{
+    padding: 1% 1%;
+    margin-right: auto;
+}
+
+#footer-div p{
+    color: var(--secondary-color);
+}
+
+.nav__links li i{
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.nav__links li i:hover{
+    color: #ff652f;
+}
+
+#themeicon{
+    width:30px;
+    cursor: pointer;
+}
+
+#aboutdiv{
+    width: 100%;
+    height: 78vh;
+    background-color: var(--primary-color);
+}
+
+#aboutdivpfirst{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#StudentsList{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#aboutdivpsecond{
+    color: var(--secondary-color);
+    text-align: justify;
+    margin: 0% 2%;
+}
+
+#contributediv{
+    width: 100%;
+    height: 78vh;
+    background-color: var(--primary-color);
+}
+
+#contributedivpone{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 1% 0 1% 1%;
+}
+
+#contributedivone{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contributedivtwo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#coffeeimg{
+    width:10%;
+    object-fit: cover;
+}
+
+/* #contributediv{
+    display: flex;
+    justify-content: center;
+} */
+
+#contributediv div{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    margin: 2% 0% 0 0;
+}
+
+#contributediv div img{
+    height: 100%;
+    object-fit: contain;
+}
+
+#synopsisdiv{
+    width: 100%;
+    height: 78vh;
+    background-color: var(--primary-color);
+}
